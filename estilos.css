@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+@font-face { 
+    font-family: Starjedi;             /* define una fuente */
+    src: url('fonts/Starjedi.ttf');  /* indica su ubicación */
+}
+body {      /* los estilos aplicados a una etiqueta valen para todos los casos */                   
+	background-image: 
+	  radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
+	  radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
+	  radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0,0,0,0)),
+	  radial-gradient(2px 2px at 90px 40px, #fff, rgba(0,0,0,0)),
+	  radial-gradient(2px 2px at 130px 80px, #fff, rgba(0,0,0,0)),
+	  radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0,0,0,0));
+	background-repeat: repeat;
+	background-size: 200px 200px;
+	background-color:#000000;
+}
+a{
+	color: #FFFF00;
+}
+a:link {
+	color: #FFFF00;
+	text-decoration:none;
+	 /* para que no subraye los vínculos */ 
+}
+a:hover {    /* indica el estilo cuando el cursor está sobre el elemento */ 
+	color:#FFFF00;
+}
+.menunav {    /* cuando lleva un punto antes, el estilo aplica sobre etiquetas marcadas */ 
+	width: 650px;  /* estilo para el menu de navegación */ 
+	margin: auto;
+	align: center;
+	font:Starjedi;
+}
+
+h1{     /* estilo para los titulares */ 
+	font-family: Starjedi,Arial, Helvetica, sans-serif; /* la fuente se asigna según disponibilidad */
+	color:#FFFF00;
+	font-size: 36px;
+	font-weight: bold;
+	text-shadow: 1px 1px #000000;
+	text-align: center;
+	max-width: 640px; /* ancho máximo del párrafo */
+	margin:auto;          /* margen igual a izquierda y derecha */ 
+	
+} 
+h1:link {
+	color:#FFFF00;
+	cursor: pointer;
+	  /* para que no subraye los vínculos en los titulares*/ 
+}
+h1:visited{
+	color:#FFFF00; 
+}
+a:visited{
+	color:#FFFF00; 
+}
+h2 {
+	font-family: Starjedi;  /* solo si se suministra el archivo de la fuente */
+	color:#FFFF00;
+	font-size: 24px;
+	font-weight: normal;
+	text-shadow: 1px 1px #000000;
+	text-align: center;
+	max-width: 640px;
+	margin:auto;
+}
+.uno {
+	position: relative;
+	max-width:640px;
+	top: 20px;
+	margin:auto;  /* margen igual a izquierda y derecha */
+	font-family: starjedi;  /* solo si se suministra el archivo de la fuente */
+	font-size: 16px;
+	font-weight: normal;
+	text-align: justify;
+	color:#FFFFFF;
+	text-shadow: 1px 1px #000000;
+}
+.dos {
+	position: relative;
+	max-width:640px;
+	top: 20px;
+	box-shadow: 15px 15px 5px 0 rgba(0, 0, 0, 0.5); /* r, g, b, alfa (transparencia) */
+	margin: auto;
+}
+.tres {
+	position: relative;
+	float: left;
+	top: 20px;
+	box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5); /* r, g, b, alfa (transparencia) */
+	margin-right: 20px;
+	margin-bottom: 30px;
+}
+th {    /* estilo para los encabezados de la tabla */ 
+	background-color: #FFFF00;
+	color: #FFFF00;
+	font-weight: normal;
+	text-align: center;
+	padding: 10px 6px 4px 10px;  /* arriba, derecha, abajo, izquierda */
+	border-style:outset; /* borde bicelado */
+	border-size:1px;
+	border-color: #FFFF00;
+}
+td {       /* estilo para las celdas de la tabla */ 
+	background-color: gray;
+	color:black;
+	padding: 10px 18px 10px 10px;
+	font-family: starjedi, helvetica, sans-serif;  
+	font-size: 12px;
+}
+.hd{
+	font-size: 16px;
+	color: #FFFF00;
+}
+td:hover {
+	color:#FFFF00;
+	text-shadow: 1px 1px #000000;	
+}  
+ul {        /* estilo para las listas */ 
+	list-style-type: none;    /* quita los "bullit lists" de las listas  */ 
+	margin: -2px 0px -2px -40px;  /* arriba, derecha, abajo, izquierda */
+}
+.button { /* estilo para cada botón del menu de navegación */ 
+	background-color:dimgrey; /* Green */
+	border: none;
+	color: #FFFF00;
+	padding:5px 10px 6px 8px;
+	width: 142px;
+	text-decoration: none;
+	display:inline;
+	cursor: pointer;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	float: left;
+	cursor: pointer;
+	font:Starjedi;
+  }
+.button:hover {
+	color:#FFFFFF;
+	text-shadow: 1px 1px #000000;	
+	cursor:pointer;
+	background-color:gray;
+}
+.imagecenter {
+	position: relative;
+	max-width:640px;
+	top: 20px;
+	margin:auto;  /* margen igual a izquierda y derecha */
+	text-align: center;
+	bottom: 20px;
+}   
+h6{
+	font-family: Starjedi;  /* solo si se suministra el archivo de la fuente */
+	color:#FFFF00;
+	font-weight: normal;
+	text-shadow: 1px 1px #000000;
+	text-align: center;
+	max-width: 640px;
+	margin:auto;
+}
