@@ -160,8 +160,8 @@ h6{
 	position: relative;
 	max-width:640px;
 	top: 20px;
-	margin:auto;  /* margen igual a izquierda y derecha */
-	font-family: starjedi;  /* solo si se suministra el archivo de la fuente */
+	margin:auto;  
+	font-family: starjedi;  
 	font-size: 16px;
 	font-weight: normal;
 	text-align: justify;
@@ -172,9 +172,22 @@ h6{
 	position: relative;
 	max-width:640px;
 	top: 20px;
-	box-shadow: 15px 15px 5px 0 rgba(0, 0, 0, 0.5); /* r, g, b, alfa (transparencia) */
+	box-shadow: 15px 15px 5px 0 rgba(0, 0, 0, 0.5); 
 	margin: auto;
 	font-family: starjedi;
+}
+/* PARRAFO ESTILO REFERENCIAS */
+.ref {
+	position: relative;
+	max-width:640px;
+	top: 20px;
+	margin:auto;  
+	font-family: cursive;  
+	font-size: 12px;
+	font-weight: normal;
+	text-align: justify;
+	color:#FFFF00;
+	text-shadow: 1px 1px #000000;
 }
 /* IMAGEN CENTRADA */ 
 .imagecenter {
@@ -221,6 +234,7 @@ td:hover {
 	font-size: 16px;
 	color: #FFFF00;
 }
+
 
 
 
