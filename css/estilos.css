@@ -2,7 +2,7 @@
 /* FUENTE DE STAR WARS */
 @font-face { 
     font-family: Starjedi;             
-    src: url('fonts/Starjedi.ttf');  
+    src: url('../fonts/Starjedi.ttf');  
 }
 /* FONDO DE ESTRELLAS */
 body {                        
