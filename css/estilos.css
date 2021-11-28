@@ -265,12 +265,174 @@ td:hover {
 
 
 
+/*<---- NAVBAR ---->*/
+ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+li {
+	list-style: none;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	color: #FFFF00;
+}
+
+.nav-links a {
+	color: #FFFF00;
+}
+
+/* NAVBAR MENU */
+.menu {
+	display: flex;
+	font-size: 18px;
+}
+
+.menu li:hover {
+	border-radius: 5px;
+	transition: 0.3s ease;
+}
+
+/* DROPDOWN MENU */
+.services {
+	position: relative;
+}
+
+.services:hover .dropdown {
+	display: block;
+}
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+input[type=checkbox] {
+	display: none;
+}
+
+/*HAMBURGER MENU*/
+.hamburger {
+	display: none;
+	font-size: 24px;
+	user-select: none;
+}
+
+/*<---- NAVBAR ---->*/
 
 
 
-/* cuando la ventana mida menos de 860px */
-@media only screen and (max-width: 860px) {}
+/* cuando la ventana mida menos de 1200px */
+@media only screen and (max-width: 1200px) {
+
+	/*<---- NAVBAR 640px ---->*/
+    .menu {
+        display: none;
+        position: fixed;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px;
+        font-size: 18px;
+        background: rgba(0.5, 0.5, 0.5, 0.3);
+        background-origin: content-box;
+        transition: all 1s;
+        z-index: 30;
+        width: 160px;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        transition: 0.3s ease;
+        
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+        
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        color: #FFFF00;
+    }
+    .menu li {
+        display: inline-block;
+        width: 100%;
+        flex-direction: column;
+        
+        transition: all 1s;
+    }
+    /*<---- NAVBAR 640px ---->*/
+
+
+
+}
 
 
 /* cuando la ventana mida menos de 640px */
-@media only screen and (max-width: 640px) {}
+@media only screen and (max-width: 640px) {
+
+	/*<---- NAVBAR 640px ---->*/
+    .menu {
+        display: none;
+        position: fixed;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px;
+        font-size: 18px;
+        background: rgba(0.5, 0.5, 0.5, 0.3);
+        background-origin: content-box;
+        transition: all 1s;
+        z-index: 30;
+        width: 160px;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        transition: 0.3s ease;
+        
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+        
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        color: #FFFF00;
+    }
+    .menu li {
+        display: inline-block;
+        width: 100%;
+        flex-direction: column;
+        
+        transition: all 1s;
+    }
+    /*<---- NAVBAR 640px ---->*/
+
+
+}
