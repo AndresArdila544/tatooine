@@ -1,54 +1,62 @@
 @charset "UTF-8";
+
 /* FUENTE DE STAR WARS */
-@font-face { 
-    font-family: Starjedi;             
-    src: url('../fonts/Starjedi.ttf');  
+@font-face {
+	font-family: Starjedi;
+	src: url('../fonts/Starjedi.ttf');
 }
+
 /* FONDO DE ESTRELLAS */
-body {                        
-	background-image: 
-	  radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
-	  radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
-	  radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0,0,0,0)),
-	  radial-gradient(2px 2px at 90px 40px, #fff, rgba(0,0,0,0)),
-	  radial-gradient(2px 2px at 130px 80px, #fff, rgba(0,0,0,0)),
-	  radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0,0,0,0));
+body {
+	background-image:
+		radial-gradient(2px 2px at 20px 30px, #eee, rgba(0, 0, 0, 0)),
+		radial-gradient(2px 2px at 40px 70px, #fff, rgba(0, 0, 0, 0)),
+		radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0, 0, 0, 0)),
+		radial-gradient(2px 2px at 90px 40px, #fff, rgba(0, 0, 0, 0)),
+		radial-gradient(2px 2px at 130px 80px, #fff, rgba(0, 0, 0, 0)),
+		radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0, 0, 0, 0));
 	background-repeat: repeat;
 	background-size: 200px 200px;
-	background-color:#000000;
+	background-color: #000000;
 }
+
 /* SUBRAYAR TEXTO */
-a{
+a {
 	color: #FFFF00;
 }
+
 /*ENLACE */
 a:link {
 	color: #FFFF00;
-	text-decoration:none;
+	text-decoration: none;
 }
-a:visited{
-	color:#FFFF00; 
+
+a:visited {
+	color: #FFFF00;
 }
+
 /*CURSOR */
-a:hover {    
-	color:#FFFF00;
+a:hover {
+	color: #FFFF00;
 }
-/* MENU NAVEGACION */ 
-.menunav {    
-	width: 650px;  
+
+/* MENU NAVEGACION */
+.menunav {
+	width: 650px;
 	margin: auto;
 	align: center;
-	font:Starjedi;
+	font: Starjedi;
 }
-/* BOTON MENU PRINCIPAL*/ 
-.button {  
-	background-color:dimgrey; 
+
+/* BOTON MENU PRINCIPAL*/
+.button {
+	background-color: dimgrey;
 	border: none;
 	color: #FFFF00;
-	padding:5px 10px 6px 8px;
+	padding: 5px 10px 6px 8px;
 	width: 142px;
 	text-decoration: none;
-	display:inline;
+	display: inline;
 	cursor: pointer;
 	font-size: 14px;
 	font-style: normal;
@@ -56,24 +64,26 @@ a:hover {
 	text-align: center;
 	float: left;
 	cursor: pointer;
-	font:Starjedi;
-  }
-  /* BOTON MENU CURSOR*/ 
+	font: Starjedi;
+}
+
+/* BOTON MENU CURSOR*/
 .button:hover {
-	color:#FFFFFF;
-	text-shadow: 1px 1px #000000;	
-	cursor:pointer;
-	background-color:gray;
+	color: #FFFFFF;
+	text-shadow: 1px 1px #000000;
+	cursor: pointer;
+	background-color: gray;
 }
-/* BOTON SUBMENU*/ 
+
+/* BOTON SUBMENU*/
 .button2 {
-	background-color: none; 
+	background-color: none;
 	border: none;
 	color: #FFFF00;
-	padding:5px 10px 6px 8px;
+	padding: 5px 10px 6px 8px;
 	width: 142px;
 	text-decoration: none;
-	display:inline;
+	display: inline;
 	cursor: pointer;
 	font-size: 14px;
 	font-style: normal;
@@ -81,24 +91,26 @@ a:hover {
 	text-align: center;
 	float: left;
 	cursor: pointer;
-	font:Starjedi;
-  }
-  /* BOTON SUBMENU CURSOR*/ 
-.button2:hover {
-	color:#FFFFFF;
-	text-shadow: 1px 1px #000000;	
-	cursor:pointer;
-	background-color:gray;
+	font: Starjedi;
 }
-/* BOTON SUBMENU 2*/ 
+
+/* BOTON SUBMENU CURSOR*/
+.button2:hover {
+	color: #FFFFFF;
+	text-shadow: 1px 1px #000000;
+	cursor: pointer;
+	background-color: gray;
+}
+
+/* BOTON SUBMENU 2*/
 .button3 {
-	background-color: none; 
+	background-color: none;
 	border: none;
 	color: #FFFF00;
-	padding:5px 10px 6px 8px;
+	padding: 5px 10px 6px 8px;
 	width: 195px;
 	text-decoration: none;
-	display:inline;
+	display: inline;
 	cursor: pointer;
 	font-size: 14px;
 	font-style: normal;
@@ -106,132 +118,147 @@ a:hover {
 	text-align: center;
 	float: left;
 	cursor: pointer;
-	font:Starjedi;
-  }
-  /* BOTON SUBMENU 2 CURSOR*/ 
-.button3:hover {
-	color:#FFFFFF;
-	text-shadow: 1px 1px #000000;	
-	cursor:pointer;
-	background-color:gray;
+	font: Starjedi;
 }
-/* TITULO */ 
-h1{     
-	font-family: Starjedi; 
-	color:#FFFF00;
+
+/* BOTON SUBMENU 2 CURSOR*/
+.button3:hover {
+	color: #FFFFFF;
+	text-shadow: 1px 1px #000000;
+	cursor: pointer;
+	background-color: gray;
+}
+
+/* TITULO */
+h1 {
+	font-family: Starjedi;
+	color: #FFFF00;
 	font-size: 36px;
 	font-weight: bold;
 	text-shadow: 1px 1px #000000;
 	text-align: center;
-	max-width: 640px; 
-	margin:auto;
-} 
-/* TITULO ENLACE*/ 
+	max-width: 640px;
+	margin: auto;
+}
+
+/* TITULO ENLACE*/
 h1:link {
-	color:#FFFF00;
+	color: #FFFF00;
 	cursor: pointer;
 }
-h1:visited{
-	color:#FFFF00; 
+
+h1:visited {
+	color: #FFFF00;
 }
-/* SUBTITULO */ 
+
+/* SUBTITULO */
 h2 {
-	font-family: Starjedi;  
-	color:#FFFF00;
+	font-family: Starjedi;
+	color: #FFFF00;
 	font-size: 24px;
 	font-weight: normal;
 	text-shadow: 1px 1px #000000;
 	text-align: center;
 	max-width: 640px;
-	margin:auto;
+	margin: auto;
 }
-/* PIE PAGINA */ 
-h6{
-	font-family: Starjedi;  
-	color:#FFFF00;
+
+/* PIE PAGINA */
+h6 {
+	font-family: Starjedi;
+	color: #FFFF00;
 	font-weight: normal;
 	text-shadow: 1px 1px #000000;
 	text-align: center;
 	max-width: 640px;
-	margin:auto;
+	margin: auto;
 }
+
 /* PARRAFO ESTILO PRINCIPAL */
 .uno {
 	position: relative;
-	max-width:640px;
+	max-width: 640px;
 	top: 20px;
-	margin:auto;  
-	font-family: starjedi;  
+	margin: auto;
+	font-family: starjedi;
 	font-size: 16px;
 	font-weight: normal;
 	text-align: justify;
-	color:#FFFFFF;
+	color: #FFFFFF;
 	text-shadow: 1px 1px #000000;
 }
+
 /* PARRAFO TABLA UBICACION*/
 .dos {
 	position: relative;
-	max-width:640px;
+	max-width: 640px;
 	top: 20px;
-	box-shadow: 15px 15px 5px 0 rgba(0, 0, 0, 0.5); 
+	box-shadow: 15px 15px 5px 0 rgba(0, 0, 0, 0.5);
 	margin: auto;
 	font-family: starjedi;
 }
+
 /* PARRAFO ESTILO REFERENCIAS */
 .ref {
 	position: relative;
-	max-width:640px;
+	max-width: 640px;
 	top: 20px;
-	margin:auto;  
-	font-family: cursive;  
+	margin: auto;
+	font-family: cursive;
 	font-size: 12px;
 	font-weight: normal;
 	text-align: justify;
-	color:#FFFF00;
+	color: #FFFF00;
 	text-shadow: 1px 1px #000000;
 }
-/* IMAGEN CENTRADA */ 
+
+/* IMAGEN CENTRADA */
 .imagecenter {
 	position: relative;
-	max-width:640px;
+	max-width: 640px;
 	top: 20px;
-	margin:auto;  
+	margin: auto;
 	text-align: center;
 	bottom: 20px;
-}   
-/* IMAGEN IZQUIERDA */ 
+}
+
+/* IMAGEN IZQUIERDA */
 .tres {
 	position: relative;
 	float: left;
 	top: 20px;
-	box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5); 
+	box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5);
 	margin-right: 20px;
 	margin-bottom: 30px;
 }
-/* IMAGEN DERECHA */ 
-.cuatro{
+
+/* IMAGEN DERECHA */
+.cuatro {
 	position: relative;
 	float: right;
 	top: 20px;
-	box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5); 
+	box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5);
 	margin-left: 20px;
 	margin-bottom: 20px;
 }
+
 /* TABLA CELDAS */
-td {       
+td {
 	background-color: gray;
-	color:black;
+	color: black;
 	padding: 10px 18px 10px 10px;
-	font-family: starjedi;  
+	font-family: starjedi;
 	font-size: 12px;
 }
+
 /* TABLA CELDAS CURSOR*/
 td:hover {
-	color:#FFFF00;
-	text-shadow: 1px 1px #000000;	
+	color: #FFFF00;
+	text-shadow: 1px 1px #000000;
 }
+
 /* TABLA CELDAS */
-.hd{
+.hd {
 	font-size: 16px;
 	color: #FFFF00;
 }
@@ -240,3 +267,10 @@ td:hover {
 
 
 
+
+/* cuando la ventana mida menos de 860px */
+@media only screen and (max-width: 860px) {}
+
+
+/* cuando la ventana mida menos de 640px */
+@media only screen and (max-width: 640px) {}
