@@ -40,14 +40,6 @@ a:hover {
 	color: #FFFF00;
 }
 
-/* MENU NAVEGACION */
-.menunav {
-	width: 650px;
-	margin: auto;
-	align: center;
-	font: Starjedi;
-}
-
 /* BOTON MENU PRINCIPAL*/
 .button {
 	background-color: dimgrey;
@@ -264,6 +256,30 @@ td:hover {
 }
 
 
+/*<---- SUBBAR ---->*/
+
+.subbar {
+	display: flex;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	color: #FFFF00;
+}
+
+.submenu {
+	display: flex;
+	font-size: 18px;
+}
+
+.submenu li:hover {
+	border-radius: 5px;
+	transition: 0.3s ease;
+}
+
+.sub-links a {
+	color: #FFFF00;
+}
+
 
 /*<---- NAVBAR ---->*/
 ul {
@@ -298,15 +314,6 @@ li {
 	transition: 0.3s ease;
 }
 
-/* DROPDOWN MENU */
-.services {
-	position: relative;
-}
-
-.services:hover .dropdown {
-	display: block;
-}
-
 /*RESPONSIVE NAVBAR MENU STARTS*/
 input[type=checkbox] {
 	display: none;
@@ -326,113 +333,121 @@ input[type=checkbox] {
 /* cuando la ventana mida menos de 1200px */
 @media only screen and (max-width: 1200px) {
 
-	/*<---- NAVBAR 640px ---->*/
-    .menu {
-        display: none;
-        position: fixed;
-        right: 0;
-        left: 0;
-        text-align: center;
-        padding: 16px;
-        font-size: 18px;
-        background: rgba(0.5, 0.5, 0.5, 0.3);
-        background-origin: content-box;
-        transition: all 1s;
-        z-index: 30;
-        width: 160px;
-    }
-
-    .menu li:hover {
-        display: inline-block;
-        transition: 0.3s ease;
-        
-    }
-
-    .menu li+li {
-        margin-top: 12px;
-        
-    }
-
-    input[type=checkbox]:checked~.menu {
-        display: block;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .navbar {
-        display: flex;
-        align-items: center;
-        justify-content: left;
-        color: #FFFF00;
-    }
-    .menu li {
-        display: inline-block;
-        width: 100%;
-        flex-direction: column;
-        
-        transition: all 1s;
-    }
-    /*<---- NAVBAR 640px ---->*/
-
 
 
 }
 
+@media only screen and (max-width: 640px) {
+	/*<---- SUBMENU 640PX ---->*/
+	.submenu {
+		display: inline-block;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		background: rgba(0.5, 0.5, 0.5, 0.3);
+		background-origin: content-box;
+	}
 
-/* cuando la ventana mida menos de 640px */
+	.submenu li:hover {
+		display: inline-block;
+		transition: 0.3s ease;
+
+	}
+
+	.submenu li+li {
+		margin-top: 12px;
+
+	}
+
+	.subbar {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #FFFF00;
+	}
+
+	.submenu li {
+		display: inline;
+		width: 100%;
+	}
+}
+
 @media only screen and (max-width: 640px) {
 
+	/*<---- NAVBAR PHONE ---->*/
+	.menu {
+		display: none;
+		position: fixed;
+		right: 0;
+		left: 0;
+		text-align: center;
+		padding: 16px;
+		font-size: 18px;
+		background: rgba(0.5, 0.5, 0.5, 0.3);
+		background-origin: content-box;
+		transition: all 1s;
+		z-index: 30;
+		width: 160px;
+	}
+
+	.menu li:hover {
+		display: inline-block;
+		transition: 0.3s ease;
+
+	}
+
+	.menu li+li {
+		margin-top: 12px;
+
+	}
+
+	input[type=checkbox]:checked~.menu {
+		display: block;
+	}
+
+	.hamburger {
+		display: block;
+	}
+
+	.navbar {
+		display: flex;
+		align-items: center;
+		justify-content: left;
+		color: #FFFF00;
+	}
+
+	.menu li {
+		display: inline-block;
+		width: 100%;
+		flex-direction: column;
+
+		transition: all 1s;
+	}
+
 	/*<---- NAVBAR 640px ---->*/
-    .menu {
-        display: none;
-        position: fixed;
-        right: 0;
-        left: 0;
-        text-align: center;
-        padding: 16px;
-        font-size: 18px;
-        background: rgba(0.5, 0.5, 0.5, 0.3);
-        background-origin: content-box;
-        transition: all 1s;
-        z-index: 30;
-        width: 160px;
-    }
 
-    .menu li:hover {
-        display: inline-block;
-        transition: 0.3s ease;
-        
-    }
+	.imagecenter {
+		position: relative;
+		float: center;
+		margin-top: 0px;
+		margin: auto;
+		text-align: center;
+		bottom: 20px;
+		max-width: 100%;
+		height: auto;
+	}
 
-    .menu li+li {
-        margin-top: 12px;
-        
-    }
+	img {
+		position: relative;
+		float: center;
+		top: 0px;
+		text-align: center;
+		bottom: 20px;
+		max-width: 100%;
+		height: auto;
+		margin-top: 0px;
+	}
 
-    input[type=checkbox]:checked~.menu {
-        display: block;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .navbar {
-        display: flex;
-        align-items: center;
-        justify-content: left;
-        color: #FFFF00;
-    }
-    .menu li {
-        display: inline-block;
-        width: 100%;
-        flex-direction: column;
-        
-        transition: all 1s;
-    }
-    /*<---- NAVBAR 640px ---->*/
-
+	.titulo {}
 
 }

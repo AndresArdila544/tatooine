@@ -6,16 +6,21 @@
 <head>
     <meta charset="UTF-8">
     <meta lang="es">
-    <title>Personajes</title><!--TITULO-->
-    <link href="css/estilos.css" rel="stylesheet" type="text/css"><!--CSS-->
-    <link rel="icon" type="image/vnd.microsoft.icon" href="imagenes/favicon.ico"> <!--FAVICON-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personajes</title>
+    <!--TITULO-->
+    <link href="css/estilos.css" rel="stylesheet" type="text/css">
+    <!--CSS-->
+    <link rel="icon" type="image/vnd.microsoft.icon" href="imagenes/favicon.ico">
+    <!--FAVICON-->
 </head>
 
 <body><a name="inicio"></a>
     <!-- HEADER -->
     <div>
-        <h2> @ </h2>
-        <h1><a href="index.html" target="_self">tatooine</a></h1>
+        <h2 class="titulo"> @ </h2>
+        <h1 class="titulo"><a href="index.html" target="_self">tatooine</a></h1>
         <nav class="navbar">
 
             <!-- NAVIGATION MENU -->
@@ -44,12 +49,25 @@
     <!-- FIN HEADER -->
     <h2>habitantes</h2>
     <div>
-        <nav class="menunav">
-            <!-- SUBMENU -->
-            <h2><a href="#colonos" class="button2">colonos</a></h2>
-            <h2><a href="#tusken" class="button2">tusken raiders</a></h2>
-            <h2><a href="#jawas" class="button2">jawas</a></h2>
-            <h2><a href="#hutt" class="button2">hutt clan</a></h2>
+        <!-- SUBMENU -->
+        <nav class="subbar">    
+            <ul class="sub-links">
+                <div class="submenu">
+                    <li>
+                        <h2><a href="#colonos" class="button2">colonos</a></h2>
+                    </li>
+                    <li>
+                        <h2><a href="#tusken" class="button2">tusken raiders</a></h2>
+                    </li>
+                    <li>
+                        <h2><a href="#jawas" class="button2">jawas</a></h2>
+                    </li>
+                    <li>
+                        <h2><a href="#hutt" class="button2">hutt clan</a></h2>
+                    </li>
+                </div>
+
+            </ul>
         </nav>
     </div>
     <!-- INTRODUCCION -->
@@ -135,8 +153,8 @@
         <a href="#inicio"> volver al inicio </a>
     </p>
 
-     <!-- FOOTER -->
-     <div>
+    <!-- FOOTER -->
+    <div>
         <br>
         <br>
         <h6><a href="referencias.html" target="_self">créditos</a>
