@@ -488,6 +488,15 @@ input[type=checkbox] {
 		font: Starjedi;
 	}
 
+	.dos {
+		position: relative;
+		max-width: 100%;
+		width: 640px;
+		top: 20px;
+		box-shadow: 15px 15px 5px 0 rgba(0, 0, 0, 0.5);
+		margin: auto;
+		font-family: starjedi;
+	}
 
 	/*<---- NAVBAR ---->*/
 	.menu {
