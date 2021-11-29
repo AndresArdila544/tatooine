@@ -45,8 +45,8 @@ a:hover {
 	background-color: dimgrey;
 	border: none;
 	color: #FFFF00;
-	padding: 5px 10px 6px 8px;
-	width: 142px;
+	padding: 5px 10px 6px 10px;
+	width: 180px;
 	text-decoration: none;
 	display: inline;
 	cursor: pointer;
@@ -125,12 +125,18 @@ a:hover {
 h1 {
 	font-family: Starjedi;
 	color: #FFFF00;
-	font-size: 36px;
+	font-size: 80px;
 	font-weight: bold;
 	text-shadow: 1px 1px #000000;
 	text-align: center;
 	max-width: 640px;
 	margin: auto;
+	font-size: 200%;
+}
+
+.titulo {
+	font-size: 200%;
+	letter-spacing: 5px;
 }
 
 /* TITULO ENLACE*/
@@ -169,7 +175,7 @@ h6 {
 /* PARRAFO ESTILO PRINCIPAL */
 .uno {
 	position: relative;
-	max-width: 640px;
+	max-width: 800px;
 	top: 20px;
 	margin: auto;
 	font-family: starjedi;
@@ -183,7 +189,7 @@ h6 {
 /* PARRAFO TABLA UBICACION*/
 .dos {
 	position: relative;
-	max-width: 640px;
+	width: 800px;
 	top: 20px;
 	box-shadow: 15px 15px 5px 0 rgba(0, 0, 0, 0.5);
 	margin: auto;
@@ -193,7 +199,7 @@ h6 {
 /* PARRAFO ESTILO REFERENCIAS */
 .ref {
 	position: relative;
-	max-width: 640px;
+	max-width: 800px;
 	top: 20px;
 	margin: auto;
 	font-family: cursive;
@@ -202,16 +208,31 @@ h6 {
 	text-align: justify;
 	color: #FFFF00;
 	text-shadow: 1px 1px #000000;
+	overflow-wrap: break-word;
+}
+
+/* LISTA REFERENCIAS*/
+ol {
+	padding: 5px;
 }
 
 /* IMAGEN CENTRADA */
-.imagecenter {
+.center {
+	width: 800px;
+	height: auto;
 	position: relative;
-	max-width: 640px;
-	top: 20px;
-	margin: auto;
-	text-align: center;
-	bottom: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.center-mos {
+	width: 400px;
+	height: auto;
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* IMAGEN IZQUIERDA */
@@ -255,9 +276,7 @@ td:hover {
 	color: #FFFF00;
 }
 
-
-/*<---- SUBBAR ---->*/
-
+/*<---- SUBMENU ---->*/
 .subbar {
 	display: flex;
 	align-items: center;
@@ -280,15 +299,10 @@ td:hover {
 	color: #FFFF00;
 }
 
-
 /*<---- NAVBAR ---->*/
 ul {
 	padding: 0;
 	list-style-type: none;
-}
-
-li {
-	list-style: none;
 }
 
 .navbar {
@@ -314,31 +328,271 @@ li {
 	transition: 0.3s ease;
 }
 
-/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX */
 input[type=checkbox] {
 	display: none;
 }
 
-/*HAMBURGER MENU*/
+/* ICONO */
 .hamburger {
 	display: none;
 	font-size: 24px;
 	user-select: none;
 }
 
-/*<---- NAVBAR ---->*/
-
-
-
-/* cuando la ventana mida menos de 1200px */
+/* VENTANAS DE MENOS DE 1200px */
 @media only screen and (max-width: 1200px) {
 
+	/* TITULO*/
+	.titulo {
+		font-size: 200%;
+		letter-spacing: 5px;
+	}
 
+	/* PARRAFO ESTILO PRINCIPAL */
+	.uno {
+		position: relative;
+		max-width: 640px;
+		top: 20px;
+		margin: auto;
+		font-family: starjedi;
+		font-size: 16px;
+		font-weight: normal;
+		text-align: justify;
+		color: #FFFFFF;
+		text-shadow: 1px 1px #000000;
+	}
 
+	/* PARRAFO TABLA UBICACION*/
+	.dos {
+		position: relative;
+		max-width: 640px;
+		top: 20px;
+		box-shadow: 15px 15px 5px 0 rgba(0, 0, 0, 0.5);
+		margin: auto;
+		font-family: starjedi;
+	}
+
+	/* PARRAFO REFERENCIAS*/
+	.ref {
+		position: relative;
+		max-width: 640px;
+		top: 20px;
+		margin: auto;
+		font-family: cursive;
+		font-size: 12px;
+		font-weight: normal;
+		text-align: justify;
+		color: #FFFF00;
+		text-shadow: 1px 1px #000000;
+		overflow-wrap: break-word;
+	}
+
+	/* BOTON MENU PRINCIPAL*/
+	.button {
+		background-color: dimgrey;
+		border: none;
+		color: #FFFF00;
+		padding: 5px 10px 6px 8px;
+		width: 142px;
+		text-decoration: none;
+		display: inline;
+		cursor: pointer;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: normal;
+		text-align: center;
+		float: left;
+		cursor: pointer;
+		font: Starjedi;
+	}
+
+	/* IMAGEN CENTRO*/
+	.center {
+		width: 640px;
+		height: auto;
+		position: relative;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.center-mos {
+		width: 640px;
+		height: auto;
+		position: relative;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	img {
+		position: relative;
+		float: center;
+		top: 0px;
+		text-align: center;
+		bottom: 20px;
+		max-width: 100%;
+		height: auto;
+		margin-top: 0px;
+	}
+
+	/* IMAGEN IZQUIERDA */
+	.tres {
+		position: relative;
+		float: left;
+		top: 5px;
+		box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5);
+		margin-right: 5px;
+		margin-bottom: 5px;
+		width: 60%;
+	}
+
+	/* IMAGEN DERECHA */
+	.cuatro {
+		position: relative;
+		float: right;
+		top: 5px;
+		box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5);
+		margin-left: 5px;
+		margin-bottom: 5px;
+		width: 60%;
+	}
 }
 
-@media only screen and (max-width: 640px) {
-	/*<---- SUBMENU 640PX ---->*/
+/* CUANDO LA PANTALLA MIDA MENOS DE 800PX*/
+@media only screen and (max-width: 800px) {
+
+	/* TITULO */
+	.titulo {
+		font-size: 180%;
+		letter-spacing: 5px;
+	}
+
+	/* BOTON MENU PRINCIPAL*/
+	.button {
+		background-color: dimgrey;
+		border: none;
+		color: #FFFF00;
+		padding: 5px 10px 6px 8px;
+		width: 142px;
+		text-decoration: none;
+		display: inline;
+		cursor: pointer;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: normal;
+		text-align: center;
+		float: left;
+		cursor: pointer;
+		font: Starjedi;
+	}
+
+
+	/*<---- NAVBAR ---->*/
+	.menu {
+		display: none;
+		position: fixed;
+		right: 0;
+		left: 0;
+		text-align: center;
+		padding: 16px;
+		font-size: 18px;
+		background: rgba(0.5, 0.5, 0.5, 0.3);
+		background-origin: content-box;
+		transition: all 1s;
+		z-index: 30;
+		width: 160px;
+	}
+
+	.menu li:hover {
+		display: inline-block;
+		transition: 0.3s ease;
+
+	}
+
+	.menu li+li {
+		margin-top: 12px;
+	}
+
+	input[type=checkbox]:checked~.menu {
+		display: block;
+	}
+
+	.hamburger {
+		display: block;
+	}
+
+	.navbar {
+		display: flex;
+		align-items: center;
+		justify-content: left;
+		color: #FFFF00;
+	}
+
+	.menu li {
+		display: inline-block;
+		width: 100%;
+		flex-direction: column;
+
+		transition: all 1s;
+	}
+
+	/* IMAGEN CENTRO*/
+	.center {
+		width: 100%;
+		height: auto;
+		position: relative;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 640px;
+	}
+	
+	.center-mos {
+		width: 100%;
+		height: auto;
+		position: relative;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 400px;
+	}
+
+	img {
+		position: relative;
+		float: center;
+		top: 0px;
+		text-align: center;
+		bottom: 20px;
+		max-width: 100%;
+		height: auto;
+		margin-top: 0px;
+	}
+
+	/* IMAGEN IZQUIERDA */
+	.tres {
+		position: relative;
+		float: left;
+		top: 5px;
+		box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5);
+		margin-right: 5px;
+		margin-bottom: 5px;
+		width: 60%;
+	}
+
+	/* IMAGEN DERECHA */
+	.cuatro {
+		position: relative;
+		float: right;
+		top: 5px;
+		box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5);
+		margin-left: 5px;
+		margin-bottom: 5px;
+		width: 60%;
+	}
+
+	/*<---- SUBMENU ---->*/
 	.submenu {
 		display: inline-block;
 		align-items: center;
@@ -370,84 +624,4 @@ input[type=checkbox] {
 		display: inline;
 		width: 100%;
 	}
-}
-
-@media only screen and (max-width: 640px) {
-
-	/*<---- NAVBAR PHONE ---->*/
-	.menu {
-		display: none;
-		position: fixed;
-		right: 0;
-		left: 0;
-		text-align: center;
-		padding: 16px;
-		font-size: 18px;
-		background: rgba(0.5, 0.5, 0.5, 0.3);
-		background-origin: content-box;
-		transition: all 1s;
-		z-index: 30;
-		width: 160px;
-	}
-
-	.menu li:hover {
-		display: inline-block;
-		transition: 0.3s ease;
-
-	}
-
-	.menu li+li {
-		margin-top: 12px;
-
-	}
-
-	input[type=checkbox]:checked~.menu {
-		display: block;
-	}
-
-	.hamburger {
-		display: block;
-	}
-
-	.navbar {
-		display: flex;
-		align-items: center;
-		justify-content: left;
-		color: #FFFF00;
-	}
-
-	.menu li {
-		display: inline-block;
-		width: 100%;
-		flex-direction: column;
-
-		transition: all 1s;
-	}
-
-	/*<---- NAVBAR 640px ---->*/
-
-	.imagecenter {
-		position: relative;
-		float: center;
-		margin-top: 0px;
-		margin: auto;
-		text-align: center;
-		bottom: 20px;
-		max-width: 100%;
-		height: auto;
-	}
-
-	img {
-		position: relative;
-		float: center;
-		top: 0px;
-		text-align: center;
-		bottom: 20px;
-		max-width: 100%;
-		height: auto;
-		margin-top: 0px;
-	}
-
-	.titulo {}
-
 }
