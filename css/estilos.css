@@ -416,7 +416,7 @@ input[type=checkbox] {
 		margin-left: auto;
 		margin-right: auto;
 	}
-	
+
 	.center-mos {
 		width: 640px;
 		height: auto;
@@ -488,6 +488,7 @@ input[type=checkbox] {
 		font: Starjedi;
 	}
 
+	/* PARRAFO TABLA UBICACION*/
 	.dos {
 		position: relative;
 		max-width: 100%;
@@ -557,7 +558,7 @@ input[type=checkbox] {
 		margin-right: auto;
 		max-width: 640px;
 	}
-	
+
 	.center-mos {
 		width: 100%;
 		height: auto;
