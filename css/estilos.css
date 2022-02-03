@@ -46,7 +46,7 @@ a:hover {
 	border: none;
 	color: #FFFF00;
 	padding: 5px 10px 6px 10px;
-	width: 180px;
+	width: 149px;
 	text-decoration: none;
 	display: inline;
 	cursor: pointer;
@@ -429,9 +429,9 @@ input[type=checkbox] {
 	img {
 		position: relative;
 		float: center;
-		top: 0px;
+		
 		text-align: center;
-		bottom: 20px;
+		
 		max-width: 100%;
 		height: auto;
 		margin-top: 0px;
@@ -458,6 +458,9 @@ input[type=checkbox] {
 		margin-bottom: 5px;
 		width: 60%;
 	}
+
+
+
 }
 
 /* CUANDO LA PANTALLA MIDA MENOS DE 800PX*/
@@ -572,9 +575,9 @@ input[type=checkbox] {
 	img {
 		position: relative;
 		float: center;
-		top: 0px;
+		
 		text-align: center;
-		bottom: 20px;
+		
 		max-width: 100%;
 		height: auto;
 		margin-top: 0px;
@@ -634,4 +637,112 @@ input[type=checkbox] {
 		display: inline;
 		width: 100%;
 	}
+
+}
+
+
+
+
+
+
+
+
+
+/* Estilos mapa*/
+/*Estilo para el div en el que está contenido el mapa interactivo*/
+.mapa_container {
+	position: relative;
+	width: 90%;
+	padding: 1%;
+	margin: auto;
+	margin-bottom: 15px;
+	display: block;
+}
+
+/*Estilo para la imagen del mapa interactivo*/
+.mapa {
+	width: 98%;
+	display: block;
+	margin: auto;
+}
+
+/*Estilos para cada uno de los puntos en el mapa interactivo*/
+.punto1 {
+	float:none !important;
+	top: none !important;
+	position: absolute !important;
+	z-index: 2 !important;
+	width: 4% !important;
+	bottom: 80% !important;
+	left: 10% !important;
+}
+
+.punto2 {
+	float:none !important;
+	top: none !important;
+	position: absolute !important;
+	z-index: 2 !important;
+	width: 4% !important;
+	bottom: 82% !important;
+	left: 38% !important;
+}
+
+.punto3 {
+	float:none !important;
+	top: none !important;
+	position: absolute !important;
+	z-index: 2 !important;
+	width: 4% !important;
+	bottom: 27% !important;
+	left: 83% !important;
+}
+
+.punto4 {
+	float:none !important;
+	top: none !important;
+	position: absolute !important;
+	z-index: 2 !important;
+	width: 4% !important;
+	bottom: 8% !important;
+	left: 9% !important;
+}
+
+.punto5 {
+	float:none !important;
+	top: none !important;
+	position: absolute !important;
+	z-index: 2 !important;
+	width: 4% !important;
+	bottom: 8% !important;
+	left: 70% !important;
+}
+
+.punto6 {
+	float:none !important;
+	top: none !important;
+	position: absolute !important;
+	z-index: 2 !important;
+	width: 4% !important;
+	bottom: 79% !important;
+	left: 20% !important;
+}
+
+.punto7 {
+	float:none !important;
+	top: none !important;
+	position: absolute !important;
+	z-index: 2 !important;
+	width: 4% !important;
+	bottom: 25% !important;
+	left: 60% !important;
+}
+
+.punto8 {
+	float:none !important;
+	top: none !important;
+	position: absolute !important;
+	z-index: 2 !important;
+	width: 4% !important;
+	bottom: 30% !important;
+	left: 30% !important;
 }
